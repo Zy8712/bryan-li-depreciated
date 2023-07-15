@@ -36,9 +36,11 @@ window.onscroll = function(){
 }
 
 function loadprojects(){
-  var baseURL = window.location.href.replace(/\/[^\/]*$/, ''); // Get the base URL
+  /*var baseURL = window.location.href.replace(/\/[^\/]*$/, ''); // Get the base URL
 
-  $j("#project-container").load(baseURL + "/main/path-filters/all-projects.html #all-projects");
+  $j("#project-container").load(baseURL + "/main/path-filters/all-projects.html #all-projects"); */
+
+  $j("#project-container").load("../path-filters/all-projects.html #all-projects");
 }
 
 function changeNavBar(){
