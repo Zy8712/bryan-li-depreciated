@@ -1,184 +1,272 @@
-<div id="all-projects" class="row gy-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryan Li | My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./main/images/" /> <!-- Browser Icon -->
 
-  <div class="col-md-4"  data-aos="fade-up" data-aos-delay="150">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/social-proof-section/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Social Proof Section</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/social-proof-section/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/social-proof-section/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/aos.css" />
+  <link rel="stylesheet" type="text/css" href="../css/line-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--integrity="sha512-pjI1+7GlPIETBpPtcyldI3H8tq+3gMToXAQ2Mf0eLJJw1mIh35pO/xVL0gRx/pXoIHY3qF1fJg2dOFN1aTQ2VQ=="-->
+</head>
+
+<!-- Scrollspy. Automatically update Bootstrap navigation or list group components
+based on scroll position to indicate which link is currently active in the viewport.
+https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
+<body data-bs-spy="scroll" data-target=".navbar">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- fixed-top ensures that content is not pushed below it -->
+    <div class="container flex-lg-column"> <!-- flex-lg-column changes nav to column format when window is large -->
+
+      <button type="button" id="minimize-navbar-button" class="position-absolute top-0 start-0 d-none d-lg-block">
+        <i class="las la-bars"></i> <!-- Load in three-lines menu icon -->
+      </button>
+
+      <button type="button" id="site-appearance-settings-button" class="position-absolute bottom-0 start-0 d-none d-lg-block">
+        <i class="las la-cog"></i> <!-- Load in gear/settings menu icon -->
+      </button>
+
+      <a class="navbar-brand mx-lg-auto mb-lg-4" href="https://github.com/Zy8712"> <!--mb-lg-4 margin bottom 4 in large window, mx-lg-auto margin left and right auto-->
+        <span class="h3 fw-bold d-block d-lg-none">Bryan Li | My Portfolio</span><!--d-lg-none only shows name when window is small-->
+        <!-- Adjust border of photo. https://getbootstrap.com/docs/4.0/utilities/borders/-->
+        <img src="./main/images/profile_icon.jpg" class="d-none d-lg-block" id="side_icon" alt="side_pic">
+      </a>
+      <!-- code for dropdown menu when window size is small -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center"> <!-- flex-lg-column changes nav to column format when window is large -->
+
+          <li class="nav-item"> <!-- Nav Bar Item 0 -->
+            <a class="nav-link" href="#home" title="" id="nav-option0">Home</a>
+          </li>
+
+          <li class="nav-item"> <!-- Nav Bar Item 1 -->
+            <a class="nav-link" href="#about" title="" id="nav-option1">About</a>
+          </li>
+
+          <li class="nav-item"> <!-- Nav Bar Item 2 -->
+            <a class="nav-link" href="#experience" title="" id="nav-option2">Experience</a>
+          </li>
+
+          <li class="nav-item"> <!-- Nav Bar Item 3 -->
+            <a class="nav-link" href="#projects" title="" id="nav-option3">Projects</a>
+          </li>
+
+          <li class="nav-item"> <!-- Nav Bar Item 4 -->
+            <a class="nav-link" href="#contact" title="" id="nav-option4">Contact</a>
+          </li>
+
+        </ul>
       </div>
     </div>
+  </nav>
+
+
+
+  <div id="content-wrapper" class="full-wrapper">
+
+    <div id="all-projects" class="row gy-4">
+
+      <div class="col-md-4"  data-aos="fade-up" data-aos-delay="150">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/social-proof-section/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Social Proof Section</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/social-proof-section/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/social-proof-section/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4"  data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/article-preview-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Article Preview Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/article-preview-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/article-preview-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"  data-aos="fade-up" data-aos-delay="150">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/faq-accordion-card/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Faq Accordion Card</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/faq-accordion-card/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/faq-accordion-card/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"  data-aos="fade-up"  data-aos-delay="300">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/stats-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Stats Preview Card Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/stats-preview-card-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/stats-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/nft-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>NFT Preview Card Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/nft-preview-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/nft-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/product-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Product Preview Card Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/product-preview-card-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/product-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/3-column-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>3 Column Preview Card Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/3-column-preview-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/3-column-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/results-summary-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Results Summary Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/results-summary-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/profile-card-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Profile Card Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/profile-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/order-summary-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Order Summary Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/order-summary-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/interactive-rating-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>Interactive Rating Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/interactive-rating-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/interactive-rating-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom rounded-4 bg-base shadow-effect">
+          <div class="card-custom-image rounded-4">
+            <img class="rounded-4" src="./main/images/qr-code-component/my-work/design/desktop-preview.jpg" alt="">
+          </div>
+          <div class="card-custom-content p-4">
+            <h4>QR Code Component</h4>
+            <div class="card-links">
+              <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/qr-code-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+              <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/qr-code-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
 
 
-  <div class="col-md-4"  data-aos="fade-up" data-aos-delay="300">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/article-preview-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Article Preview Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/article-preview-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/article-preview-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4"  data-aos="fade-up" data-aos-delay="150">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/faq-accordion-card/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Faq Accordion Card</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/faq-accordion-card/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/faq-accordion-card/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4"  data-aos="fade-up"  data-aos-delay="300">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/stats-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Stats Preview Card Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/stats-preview-card-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/stats-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/nft-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>NFT Preview Card Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/nft-preview-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/nft-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/product-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Product Preview Card Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/product-preview-card-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/product-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/3-column-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>3 Column Preview Card Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/3-column-preview-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/3-column-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/results-summary-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Results Summary Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/results-summary-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/profile-card-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Profile Card Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/profile-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/order-summary-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Order Summary Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/order-summary-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/interactive-rating-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>Interactive Rating Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/interactive-rating-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/interactive-rating-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-custom rounded-4 bg-base shadow-effect">
-      <div class="card-custom-image rounded-4">
-        <img class="rounded-4" src="./main/images/qr-code-component/my-work/design/desktop-preview.jpg" alt="">
-      </div>
-      <div class="card-custom-content p-4">
-        <h4>QR Code Component</h4>
-        <div class="card-links">
-          <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/qr-code-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
-          <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/qr-code-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
+  <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="../js/aos.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.7.0.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/prototype.js"></script>
+</body>
+</html>
