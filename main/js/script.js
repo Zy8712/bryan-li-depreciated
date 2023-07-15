@@ -40,7 +40,7 @@ function loadprojects(){
 
   $j("#project-container").load(baseURL + "/main/path-filters/all-projects.html #all-projects"); */
 
-  $j("#project-container").load("../path-filters/all-projects.html #all-projects");
+  $j("#project-container").load("/main/path-filters/all-projects.html #all-projects");
 }
 
 function changeNavBar(){
