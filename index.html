@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bryan Li | My Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="./main/images/" /> <!-- Browser Icon -->
+  <link rel="icon" type="image/x-icon" href="./main/images/pngegg3.png" /> <!-- Browser Icon -->
 
   <link rel="stylesheet" type="text/css" href="./main/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="./main/css/aos.css" />
@@ -71,6 +71,44 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
   </nav>
 
 
+  <div class="settings-popup" id="site-settings-popup">
+
+    <button type="button" id="close-site-appearance-settings-button" class="position-absolute top-0 end-0 d-none d-lg-block">
+      <i class="las la-times"></i>
+    </button>
+
+    <div id="site-settings-popup-box">
+      <div id="settings-popup-box-contents">
+
+        <div id="dark-light-toggle-box">
+          <h2 id="dark-light-toggle-box-text">Appearance (Light):</h2>
+          <button id="dark-light-button">
+            <img id="light-mode-icon" src="./main/images/sun-svgrepo-com.svg" alt="light_mode_icon">
+            <img id="dark-mode-icon" src="./main/images/moon-svgrepo-com.svg" alt="night_mode_icon">
+          </button>
+        </div>
+
+        <h2>Change Theme:</h2>
+
+        <div id="settings-theme-options">
+          <button id="iceberg-theme-button">
+            <img title="Iceberg Theme" src="./main/images/peakpx-iceberg.jpg" alt="iceberg_img">
+          </button>
+          <button id="goldmoon-theme-button">
+            <img title="Goldmoon Theme" src="./main/images/peakpx-goldmoon.jpg" alt="goldmoon_img">
+          </button>
+          <button id="citiscape-theme-button">
+            <img title="Citiscape Theme" src="./main/images/peakpx-citiscape.jpg" alt="citiscape_img">
+          </button>
+          <button id="sunrise-theme-button">
+            <img title="Sunrise Theme" src="./main/images/peakpx-sunrise.jpg" alt="sunrise_img">
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
 
   <div id="content-wrapper" class="full-wrapper">
 
@@ -81,8 +119,13 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
 
     <section id="home" class="full-height px-lg-5 theme1-background"> <!-- px-lg-5 adds padding to content-->
       <div class="container"> <!-- use to  style="border: black 3px solid" to see how container works -->
-        <div class="logo-box">
-          <img src="./main/images/" alt="logo1">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">SPECIALIZED HONOURS GRADUATE</span> FROM YORK UNIVERSITY</h1>
+            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="150" style="color:black">Welcome to my personal portfolio website! My name is Bryan, pleased to meet you!</p>
+            <a href="#projects" class="btn btn-brand me-3" data-aos="fade-up" data-aos-delay="300">Explore My Work</a> <!--me-3 margin end 3-->
+            <a href="#experience" class="btn btn-brand" data-aos="fade-up" data-aos-delay="300">View My Experience</a> <!--me-3 margin end 3-->
+          </div>
         </div>
       </div>
     </section>
@@ -90,6 +133,32 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
     <section id="about" class="full-height px-lg-5 contact-background">
       <div class="container">
 
+        <div class="row pb-4" data-aos="fade-up">
+         <div class="col-lg-8">
+           <h6 class="text-brand">INTRODUCTION</h6>
+           <h1>A Brief Introduction About Myself</h1>
+         </div>
+       </div>
+
+       <div class="row" data-aos="fade-up">
+         <div class="col-lg-12 intro-paragraph">
+           <p>A recently graduated Computer Science student with an excellent understanding of various
+             industry-standard programming languages, platforms, frameworks, design techniques and tools.
+             Using my strong communication and teamwork skills I have been able to successfully complete
+             and achieve the goals laid out before me in various group projects. I am also a creative and
+             analytical thinker capable of working under pressure in fast-paced environments where flexibility
+             is required. I would also consider myself to be a passionate learner, constantly looking for
+             opportunities to learn new things and gain more experience. This also works together with my
+             tendency to plan ahead while also operating using a “work smarter” mentality.
+           </p>
+         </div>
+         <div class="col-lg-6 vert-center pt-4">
+           <img src="./main/images/York-University-sign.png" class="rounded-4">
+         </div>
+         <div class="col-lg-6 vert-center pt-4">
+           <img src="./main/images/Bergeron-Exterior-1-1024x683.jpg" class="rounded-4">
+         </div>
+       </div>
 
       </div>
     </section>
@@ -98,12 +167,109 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
     <section id="experience" class="full-height px-lg-5 contact-background">
       <div class="container">
 
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">ABOUT</h6>
+              <h1>My Education & Experience</h1>
+            </div>
+          </div>
+
+          <div class="row gy-5">
+
+            <div class="col-lg-6">
+
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-university"></i> Education</h3>
+
+              <div class="row gy-4">
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/york_university.jpg" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Specialized Honours Bachelours in Computer Science (BSc)</h4>
+                      <p class="text-brand mb-2">York University (Sept 2018 - Aug 2022)</p>
+                      <p class="mb-0"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <img class="rounded-4" src="./main/images/bayview_secondary_edited.jpg" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Ontario Secondary School (OSS) Diploma</h4>
+                      <p class="text-brand mb-2">Bayview Secondary (Sept 2014 - June 2018)</p>
+                      <p class="mb-0">Highschool. Notable courses: Calculus, Accounting, Computer Science,
+                        Physics, Chemistry, English, International Business. Graduated with an average of: ~90%.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300"><i class="las la-briefcase"></i> Work Experience</h3>
+              <div class="row gy-4">
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <a href="https://www.mathnasium.ca/richmondhillnorth" target="_blank">
+                        <img class="rounded-4" src="./main/images/mathnasium_rhn_edit.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Math Instructor</h4>
+                      <p class="text-brand mb-2">Mathnasium Richmond Hill North (Oct 2022 - Present)</p>
+                      <p class="mb-0">Teaching math to students in grades 1-12. Working together with fellow instructors to
+                        fill in gaps in our students current understanding of mathematics so they will have the necessary
+                        skills to succeed both in their current studies and have a strong foundation to work off of in their
+                        future studies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="bg-base rounded-4 shadow-effect card-custom"  data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-custom-image rounded-4">
+                      <a href="https://www.mathnasium.ca/thornhill" target="_blank">
+                        <img class="rounded-4" src="./main/images/mathnasium_th_edit.png" alt="">
+                      </a>
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Math Instructor</h4>
+                      <p class="text-brand mb-2">Mathnasium Thornhill (Oct 2022 - Present)</p>
+                      <p class="mb-0">Teaching math to students in grades 1-12. Working together with fellow instructors to
+                        fill in gaps in our students current understanding of mathematics so they will have the necessary
+                        skills to succeed both in their current studies and have a strong foundation to work off of in their
+                        future studies.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
 
       </div>
     </section>
 
 
-    <section id="projects" class="full-height px-lg-5">
+    <section id="projects" class="full-height px-lg-5 contact-background">
 
       <div class="container">
 
@@ -111,7 +277,7 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
           <div class="col-lg-12">
             <h6 class="text-brand">"Embarking on the frontend journey, one step at a time"</h6>
             <h2 class="mb-3">Newbie Frontend Mentor Challenges</h2>
-            <p class="project-filter-buttons">
+            <!--<p class="project-filter-buttons">
               <button>All</button>
               <button>HTML/CSS</button>
               <button>HTML/CSS + JS</button>
@@ -121,11 +287,628 @@ https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
               <button>Python</button>
               <button>C++</button>
               <button>Other</button>
-            </p>
+            </p>-->
           </div>
         </div>
 
         <div id="project-container">
+
+          <div class="row gy-4">
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-directory-edited.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Frontend Mentor Work Directory</h4>
+                    <div class="prog-lang-icon icon-4">
+                      <img class="framework-icon" src="./main/images/bootstrap-4-logo-svgrepo-com.svg" alt="bootstrap_icon" title="Bootstrap">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Last Updated: July 18th, 2023 [Active]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Personal Portfolio Site</h4>
+                    <div class="prog-lang-icon icon-4">
+                      <img class="framework-icon" src="./main/images/bootstrap-4-logo-svgrepo-com.svg" alt="bootstrap_icon" title="Bootstrap">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Last Updated: July 18th, 2023 [Active]</p>
+                  <div class="card-links-mentor">
+                    <a href="" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Mirror Preview</a>
+                    <a href="https://bryan-li.vercel.app/" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/dev-tools-site-edited.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Dev Tools Site</h4>
+                    <div class="prog-lang-icon icon-4">
+                      <img class="framework-icon" src="./main/images/bootstrap-4-logo-svgrepo-com.svg" alt="bootstrap_icon" title="Bootstrap">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Last Updated: July 18th, 2023 [Active]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://github.com/Zy8712/dev-tools-site" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://dev-tools-site.vercel.app/" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/single-price-grid-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Single Price Grid Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: July 17th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/single-price-grid-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/single-price-grid-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/four-card-feature-section/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Four Card Feature Section</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: July 16th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/four-card-feature-section/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/four-card-feature-section/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/news-homepage/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>News Homepage</h4>
+                    <div class="prog-lang-icon icon-3">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Completed: July 14th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/news-homepage/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/news-homepage/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/social-proof-section/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Social Proof Section</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: July 9th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/social-proof-section/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/social-proof-section/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/fylo-data-storage-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Fylo Data Storage Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: July 7th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/fylo-data-storage-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/fylo-data-storage-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/time-tracking-dashboard/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Time Tracking Dashboard</h4>
+                    <div class="prog-lang-icon icon-3">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Completed: July 6th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/time-tracking-dashboard/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/time-tracking-dashboard/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/testimonials-grid-section/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Testimonials Grid Section</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: July 3rd, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/testimonials-grid-section/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/testimonials-grid-section/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/article-preview-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Article Preview Component</h4>
+                    <div class="prog-lang-icon icon-3">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Completed: July 1st, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/article-preview-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/article-preview-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/newsletter-sign-up-with-success-message/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Newsletter Sign-up Form With Success Message</h4>
+                    <div class="prog-lang-icon icon-3">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Completed: July 1st, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/newsletter-sign-up-with-success-message/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/newsletter-sign-up-with-success-message/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/faq-accordion-card/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Faq Accordion Card</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 26th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/faq-accordion-card/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/faq-accordion-card/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up"  data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/stats-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Stats Preview Card Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 16th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/stats-preview-card-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/stats-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/nft-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>NFT Preview Card Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 14th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/nft-preview-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/nft-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/product-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Product Preview Card Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 13th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/product-preview-card-component/my-work" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/product-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/3-column-preview-card-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>3 Column Preview Card Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 12th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/3-column-preview-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/3-column-preview-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/results-summary-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Results Summary Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 11th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/results-summary-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/results-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/profile-card-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Profile Card Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 10th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/profile-card-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/profile-card-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/order-summary-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Order Summary Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 9th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/order-summary-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/order-summary-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/interactive-rating-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Interactive Rating Component</h4>
+                    <div class="prog-lang-icon icon-3">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Completed: June 8th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/interactive-rating-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/interactive-rating-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/frontend-mentor-previews/qr-code-component/my-work/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>QR Code Component</h4>
+                    <div class="prog-lang-icon icon-2">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                    </div>
+                  </div>
+                  <p>Completed: June 5th, 2023 [Trial #1]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank" class="link-custom"><i class="las la-info-circle"></i> Challenge Info</a>
+                    <a href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/qr-code-component/my-work" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://frontend-mentor-challenges-pi-sage.vercel.app/qr-code-component/my-work/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Portfolio Site V2</h4>
+                    <div class="prog-lang-icon icon-4">
+                      <img class="framework-icon" src="./main/images/bootstrap-4-logo-svgrepo-com.svg" alt="bootstrap_icon" title="Bootstrap">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Last Updated: April 16th, 2023 [Depreciated]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://github.com/Zy8712/zy8712.github.io_v2_depreciated" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://zy8712-github-io-v2-depreciated.vercel.app/" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/react-to-do-list-edited.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>React - To Do List</h4>
+                    <div class="prog-lang-icon icon-4">
+                      <img class="framework-icon" src="./main/images/react-1-logo-svgrepo-com.svg" alt="react_icon" title="React">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Last Updated: March 23rd, 2023 [Active]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://github.com/Zy8712/react-app-to-do-list" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://react-app-to-do-list-xi.vercel.app/" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="150">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/react-movie-catalogue-edited.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>React - Movie Catalogue</h4>
+                    <div class="prog-lang-icon icon-4">
+                      <img class="framework-icon" src="./main/images/react-1-logo-svgrepo-com.svg" alt="react_icon" title="React">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Completed: March 22nd, 2023</p>
+                  <div class="card-links-mentor">
+                    <a href="https://www.youtube.com/watch?v=b9eMGE7QtTk" target="_blank" class="link-custom"><i class="las la-play"></i> Tutorial</a>
+                    <a href="https://github.com/Zy8712/react-app-practice-movie-catalogue" target="_blank" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://react-app-practice-movie-catalogue.vercel.app/" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img class="rounded-4" src="./main/images/portfolio-site-v1-edited.jpg" alt="">
+                </div>
+                <div class="card-custom-content p-4">
+                  <div class="proj-details">
+                    <h4>Portfolio Site V1</h4>
+                    <div class="prog-lang-icon icon-3">
+                      <img src="./main/images/html5-svgrepo-com.svg" alt="html5_icon" title="HTML5">
+                      <img src="./main/images/css3-svgrepo-com.svg" alt="css3_icon" title="CSS3">
+                      <img src="./main/images/javascript-svgrepo-com.svg" alt="javascript_icon" title="Javascript">
+                    </div>
+                  </div>
+                  <p>Last Updated: January 8th, 2023 [Depreciated]</p>
+                  <div class="card-links-mentor">
+                    <a href="https://github.com/Zy8712/zy8712.github.io_v1_depreciated" class="link-custom"><i class="lab la-github"></i> GitHub Repo</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/Zy8712/zy8712.github.io_v1_depreciated/blob/main/index.html" target="_blank" class="link-custom"><i class="las la-external-link-alt"></i> Preview</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
 
         </div>
 
